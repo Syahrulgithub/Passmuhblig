@@ -15,18 +15,26 @@
     <header class="bg-indigo-900 text-white fixed top-0 left-0 w-full z-50">
       <div class="container mx-auto px-4 py-6">
         <nav class="flex flex-wrap justify-between items-center">
+          <!-- Logo dan judul -->
           <div class="flex items-center space-x-4">
             <img src="img/logo.png" alt="Logo" class="h-10 w-auto" />
             <a href="#" class="text-xl font-bold">PASSMUHBLIG</a>
           </div>
-          <div class="relative">
-            <button
-              id="navbar-toggle"
-              class="text-2xl lg:hidden focus:outline-none"
-            >
+
+          <!-- Menu mendatar untuk desktop -->
+          <ul class="hidden lg:flex space-x-8 text-sm font-medium">
+            <li><a href="#" class="hover:underline">HOME</a></li>
+            <li><a href="#" class="hover:underline">SERVICES</a></li>
+            <li><a href="#" class="hover:underline">PRICING</a></li>
+            <li><a href="#" class="hover:underline">ABOUT US</a></li>
+            <li><a href="#" class="hover:underline">CONTACT US</a></li>
+          </ul>
+
+          <!-- Hamburger + Popup untuk mobile -->
+          <div class="relative lg:hidden">
+            <button id="navbar-toggle" class="text-2xl focus:outline-none">
               ☰
             </button>
-            <!-- Popup menu -->
             <div
               id="popup-menu"
               class="absolute right-0 mt-2 bg-white text-black p-6 rounded-md shadow-lg w-80 z-50 hidden"
@@ -57,7 +65,7 @@
           <p class="mb-6">
             Di Organisasi Paskibra SMK Muhammadiyah Bligo. Organisasi yang
             memnjunjung tinggi sikap kedisiplinan, membentuk mental, dan rasa
-            cinta tan.
+            cinta tanah air.
           </p>
           <div class="flex flex-wrap gap-4">
             <a
