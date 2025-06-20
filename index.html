@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PASSMUHBLIG</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="Image/png" href="svg.png" />
+    <script defer>
+      // Navbar toggle
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggler = document.querySelector(".navbar-toggler");
+        const nav = document.querySelector(".navbar-nav");
+        toggler.addEventListener("click", () => {
+          nav.classList.toggle("show");
+        });
+      });
+
+      // Carousel logic
+      document.addEventListener("DOMContentLoaded", () => {
+        const items = document.querySelectorAll(".carousel-item");
+        let current = 0;
+        setInterval(() => {
+          items[current].classList.remove("active");
+          current = (current + 1) % items.length;
+          items[current].classList.add("active");
+        }, 3000);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo-wrap">
+            <img src="img/logo.png" alt="Logo" class="logo-img" />
+          </div>
+          <a href="#" class="navbar-brand">PASSMUHBLIG</a>
+          <button class="navbar-toggler">☰</button>
+          <ul class="navbar-nav">
+            <li><a class="nav-link active-home" href="#">HOME</a></li>
+            <li><a class="nav-link" href="#">SERVICES</a></li>
+            <li><a class="nav-link" href="#">PRICING</a></li>
+            <li><a class="nav-link" href="#">ABOUT US</a></li>
+            <li><a class="nav-link" href="#">CONTACT US</a></li>
+          </ul>
+        </nav>
+
+        <div class="banner">
+          <div class="banner-text">
+            <h1>Welcome to</h1>
+            <p>Paskibra SMK Muhammadiyah Bligo.</p>
+            <p>
+              Organisasi siswa yang menjunjung tinggi kedisiplinan, loyalitas
+              tinggi, dan rasa bela negara yang kuat
+            </p>
+            <a href="#" class="express-btn">JOIN FREE</a>
+            <a href="#" class="express-btn">EXPLORE MORE</a>
+          </div>
+          <div class="banner-image">
+            <img
+              src="img/WhatsApp Image 2025-06-21 at 01.28.24.jpeg"
+              alt="Profile"
+              class="responsive-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <h2 class="title">We Provide a wide range<br />of services</h2>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <div class="services-row">
+          <div class="services-box">
+            <img src="img/servicesimg.png" alt="Service 1" />
+            <h6>Express Delivery</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <span class="arrow">→</span>
+          </div>
+          <div class="services-box active-services">
+            <img src="img/servicesimg.png" alt="Service 2" />
+            <h6>Offer Around You</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <span class="arrow">→</span>
+          </div>
+          <div class="services-box">
+            <img src="img/servicesimg.png" alt="Service 3" />
+            <h6>Pocket Friendly</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature">
+      <div class="container feature-content">
+        <div class="feature-img-wrap">
+          <img src="img/user1.jpg" alt="User" class="feature-img" />
+          <div class="play-icon">▶</div>
+        </div>
+        <div class="feature-text">
+          <h2>We always love to hear <br />our customer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#">WATCH NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore">
+      <div class="container explore-content">
+        <div class="explore-text">
+          <h2>How does YOGO make <br />life better</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#">WATCH NOW</a>
+        </div>
+        <div class="explore-img">
+          <img src="img/banner1.jpg" alt="Explore" class="responsive-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel Review Section -->
+    <section class="review">
+      <div class="container">
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img src="img/banner1.jpg" alt="Jennifer" />
+            <div class="carousel-caption">
+              <h6>Jennifer Lopez</h6>
+              <small>CEO & FOUNDER @ Microsoft</small>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/background2.jpg" alt="George" />
+            <div class="carousel-caption">
+              <h6>George Synonds</h6>
+              <small>SENIOR MANAGER @ GOOGLE</small>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/background.jpg" alt="Ying" />
+            <div class="carousel-caption">
+              <h6>Ying Yue</h6>
+              <small>FASHION DESIGNER @ Myntra</small>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer text-center">
+      <div class="container">
+        <h2>Subscribe To our Newsletter</h2>
+        <form>
+          <input type="text" placeholder="Enter your email" required />
+          <button type="submit">SUBSCRIBE</button>
+          <small>&copy; 2020, Designed by Ridho Surya</small>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
